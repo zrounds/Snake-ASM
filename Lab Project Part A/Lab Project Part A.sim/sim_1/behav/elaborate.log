@@ -1,0 +1,35 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto a698faa2f14e4d4daa732d186e824ee4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot project_screentest_behav xil_defaultlib.project_screentest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.register_file(Abits=5,Dbits=32,N...
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.adder(N=32)
+Compiling module xil_defaultlib.addsub(N=32)
+Compiling module xil_defaultlib.shifter(N=32)
+Compiling module xil_defaultlib.logical(N=32)
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.ALU(N=32)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem(Nloc=32,imem_init="imem.txt...
+Compiling module xil_defaultlib.screenmem(smem_init="smem.txt")
+Compiling module xil_defaultlib.dmem(Abits=13,Nloc=8192,dmem_ini...
+Compiling module xil_defaultlib.memIO(dmem_init="dmem.txt",smem_...
+Compiling module xil_defaultlib.xycounter(width=800,height=525)
+Compiling module xil_defaultlib.vgatimer
+Compiling module xil_defaultlib.bmem(Nloc=3072,bmem_init="bmem.t...
+Compiling module xil_defaultlib.vgadisplaydriver(bmem_init="bmem...
+Compiling module xil_defaultlib.keyboard
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.selfcheck
+Compiling module xil_defaultlib.project_screentest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot project_screentest_behav

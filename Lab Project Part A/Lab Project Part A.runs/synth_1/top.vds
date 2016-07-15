@@ -1,0 +1,616 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Dec 02 07:42:30 2015
+# Process ID: 10864
+# Log file: C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.runs/synth_1/top.vds
+# Journal file: C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+WARNING: [Synth 8-2611] redeclaration of ansi port clkin is not allowed [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/clockdiv.sv:13]
+WARNING: [Synth 8-976] clkin has already been declared [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/clockdiv.sv:13]
+WARNING: [Synth 8-2654] second declaration of clkin ignored [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/clockdiv.sv:13]
+INFO: [Synth 8-994] clkin is declared here [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/clockdiv.sv:11]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 254.020 ; gain = 78.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/top.sv:11]
+	Parameter imem_init bound to: imem.txt - type: string 
+	Parameter dmem_init bound to: dmem.txt - type: string 
+	Parameter smem_init bound to: smem.txt - type: string 
+	Parameter bmem_init bound to: bmem.txt - type: string 
+INFO: [Synth 8-638] synthesizing module 'clockdivider_Nexys4' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/clockdiv.sv:11]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16119]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 80 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_BASE' (1#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16119]
+WARNING: [Synth 8-350] instance 'mmcm' of module 'MMCME2_BASE' requires 18 connections, but only 10 given [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/clockdiv.sv:17]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'INV' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12858]
+INFO: [Synth 8-256] done synthesizing module 'INV' (3#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12858]
+INFO: [Synth 8-638] synthesizing module 'BUFGMUX' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:696]
+	Parameter CLK_SEL_TYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'BUFGMUX' (4#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:696]
+INFO: [Synth 8-256] done synthesizing module 'clockdivider_Nexys4' (5#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/clockdiv.sv:11]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/mips.sv:11]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/controller.sv:39]
+INFO: [Synth 8-256] done synthesizing module 'controller' (6#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/controller.sv:39]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/new/datapath.sv:23]
+	Parameter Abits bound to: 5 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/new/register_file.sv:11]
+	Parameter Abits bound to: 5 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'reg.txt' is read successfully [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/new/register_file.sv:25]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (7#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/new/register_file.sv:11]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'addsub' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/addsub.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/adder.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/fulladder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (8#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/fulladder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'adder' (9#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'addsub' (10#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/addsub.v:23]
+INFO: [Synth 8-638] synthesizing module 'shifter' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/shifter.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shifter' (11#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/shifter.v:23]
+INFO: [Synth 8-638] synthesizing module 'logical' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/logical.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logical' (12#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/logical.v:23]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/comparator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (13#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/comparator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (14#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (15#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/imports/sources_1/new/datapath.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mips' (16#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/mips.sv:11]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/imem.sv:4]
+	Parameter Abits bound to: 32 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 500 - type: integer 
+	Parameter imem_init bound to: imem.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file 'imem.txt' is read successfully [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/imem.sv:15]
+INFO: [Synth 8-256] done synthesizing module 'imem' (17#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/imem.sv:4]
+INFO: [Synth 8-638] synthesizing module 'memIO' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/memIO.sv:4]
+	Parameter Abits bound to: 32 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 8192 - type: integer 
+	Parameter dmem_init bound to: dmem.txt - type: string 
+	Parameter smem_init bound to: smem.txt - type: string 
+INFO: [Synth 8-638] synthesizing module 'screenmem' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/screenmem.sv:4]
+	Parameter Abits bound to: 11 - type: integer 
+	Parameter Dbits bound to: 4 - type: integer 
+	Parameter Nloc bound to: 1200 - type: integer 
+	Parameter smem_init bound to: smem.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file 'smem.txt' is read successfully [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/screenmem.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'screenmem' (18#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/screenmem.sv:4]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/dmem.sv:4]
+	Parameter Abits bound to: 13 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 8192 - type: integer 
+	Parameter dmem_init bound to: dmem.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file 'dmem.txt' is read successfully [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/dmem.sv:19]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (19#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/dmem.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'memIO' (20#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/memIO.sv:4]
+INFO: [Synth 8-638] synthesizing module 'vgadisplaydriver' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab7/Lab7.srcs/sources_1/new/vgadisplaydriver.sv:13]
+	Parameter bmem_init bound to: bmem.txt - type: string 
+INFO: [Synth 8-638] synthesizing module 'vgatimer' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab7/Lab7.srcs/sources_1/new/vgatimer.sv:25]
+INFO: [Synth 8-638] synthesizing module 'xycounter' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab7/Lab7.srcs/sources_1/imports/new/xycounter.sv:24]
+	Parameter width bound to: 800 - type: integer 
+	Parameter height bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xycounter' (21#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab7/Lab7.srcs/sources_1/imports/new/xycounter.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'vgatimer' (22#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab7/Lab7.srcs/sources_1/new/vgatimer.sv:25]
+INFO: [Synth 8-638] synthesizing module 'bmem' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/bmem.sv:4]
+	Parameter Abits bound to: 12 - type: integer 
+	Parameter Dbits bound to: 12 - type: integer 
+	Parameter Nloc bound to: 3072 - type: integer 
+	Parameter bmem_init bound to: bmem.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file 'bmem.txt' is read successfully [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/bmem.sv:15]
+INFO: [Synth 8-256] done synthesizing module 'bmem' (23#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/bmem.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'vgadisplaydriver' (24#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab7/Lab7.srcs/sources_1/new/vgadisplaydriver.sv:13]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/keyboard.sv:19]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (25#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/new/keyboard.sv:19]
+INFO: [Synth 8-256] done synthesizing module 'top' (26#1) [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/sources_1/imports/541Lab/Lab10/Lab10.srcs/sources_1/new/top.sv:11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 277.992 ; gain = 102.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 277.992 ; gain = 102.109
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/constrs_1/new/FullCPU.xdc]
+Finished Parsing XDC File [C:/Users/Alchemy/Desktop/541Lab/Lab Project Part A/Lab Project Part A.srcs/constrs_1/new/FullCPU.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 591.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 65    
++---Registers : 
+	               32 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	   4 Input     32 Bit        Muxes := 3     
+	 214 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  14 Input     10 Bit        Muxes := 1     
+	   9 Input     10 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clockdivider_Nexys4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input     10 Bit        Muxes := 1     
+	   9 Input     10 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module fulladder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module addsub 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module logical 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module comparator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	 214 Input     32 Bit        Muxes := 1     
+Module memIO 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module xycounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+Module vgatimer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module vgadisplaydriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "myvgatimer/xy/y0" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 591.453 ; gain = 415.570
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|bmem             | rom        | 1024x12       | LUT            | 
+|vgadisplaydriver | rom        | 1024x12       | LUT            | 
++-----------------+------------+---------------+----------------+
+
+
+Distributed RAM: 
++------------+-------------------+-----------+----------------------+----------------------------------------------+-------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives                                   | Hierarchical Name | 
++------------+-------------------+-----------+----------------------+----------------------------------------------+-------------------+
+|top         | mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12                                  | top/ram__6        | 
+|top         | memIO/smem/rf_reg | Implied   | 2 K x 4              | RAM16X1D x 4  RAM32X1D x 4  RAM128X1D x 36   | top/ram__8        | 
+|top         | memIO/dmem/rf_reg | Implied   | 8 K x 32             | RAM256X1S x 1024                             | top/ram__10       | 
++------------+-------------------+-----------+----------------------+----------------------------------------------+-------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[31] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[30] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[29] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[28] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[27] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[24] ) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/temp_char_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/keyb_char_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/temp_char_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/keyb_char_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/keyb_char_reg[25] )
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/temp_char_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[30] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[29] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[27] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[24] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\keyb/keyb_char_reg[8] ) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 591.453 ; gain = 415.570
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:33 . Memory (MB): peak = 591.453 ; gain = 415.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:43 . Memory (MB): peak = 811.961 ; gain = 636.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:18 ; elapsed = 00:02:44 . Memory (MB): peak = 811.961 ; gain = 636.078
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:02:45 . Memory (MB): peak = 811.961 ; gain = 636.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:02:45 . Memory (MB): peak = 811.961 ; gain = 636.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:02:19 ; elapsed = 00:02:45 . Memory (MB): peak = 811.961 ; gain = 636.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:20 ; elapsed = 00:02:47 . Memory (MB): peak = 811.961 ; gain = 636.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |BUFGMUX     |     4|
+|3     |CARRY4      |    24|
+|4     |LUT1        |    57|
+|5     |LUT2        |    98|
+|6     |LUT3        |   142|
+|7     |LUT4        |   100|
+|8     |LUT5        |   238|
+|9     |LUT6        |  1136|
+|10    |MMCME2_BASE |     1|
+|11    |MUXF7       |   188|
+|12    |MUXF8       |    57|
+|13    |RAM128X1D   |    36|
+|14    |RAM16X1D    |     4|
+|15    |RAM256X1S   |  1024|
+|16    |RAM32M      |    12|
+|17    |RAM32X1D    |     4|
+|18    |FDRE        |   119|
+|19    |IBUF        |     4|
+|20    |OBUF        |    14|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------------+--------------------+------+
+|      |Instance       |Module              |Cells |
++------+---------------+--------------------+------+
+|1     |top            |                    |  3263|
+|2     |  clockdiv     |clockdivider_Nexys4 |    13|
+|3     |  display      |vgadisplaydriver    |    82|
+|4     |    myvgatimer |vgatimer            |    82|
+|5     |      xy       |xycounter           |    78|
+|6     |  keyb         |keyboard            |   105|
+|7     |  memIO        |memIO               |  1524|
+|8     |    dmem       |dmem                |  1456|
+|9     |    smem       |screenmem           |    68|
+|10    |  mips         |mips                |  1521|
+|11    |    dp         |datapath            |  1521|
+|12    |      rf       |register_file       |  1426|
++------+---------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:20 ; elapsed = 00:02:47 . Memory (MB): peak = 811.961 ; gain = 636.078
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:02 ; elapsed = 00:02:29 . Memory (MB): peak = 811.961 ; gain = 307.480
+Synthesis Optimization Complete : Time (s): cpu = 00:02:21 ; elapsed = 00:02:47 . Memory (MB): peak = 811.961 ; gain = 636.078
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1113 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1085 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 36 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 4 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 1024 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:23 ; elapsed = 00:02:47 . Memory (MB): peak = 811.961 ; gain = 622.246
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.404 . Memory (MB): peak = 811.961 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 02 07:45:26 2015...
